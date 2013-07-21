@@ -1,0 +1,9 @@
+*~
+*.cm*
+*.annot
+*.[oa]
+*.omc
+.omakedb
+*.opt
+*.run
+*.log
