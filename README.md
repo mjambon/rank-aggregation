@@ -11,13 +11,13 @@ better description of segments.
 
 Each segment comes with a ranking of all athletes that ever completed
 that segment. While knowing one's ranking on a particular segment is
-fun, it is always ideal:
+fun, it is not always ideal:
 
 * The ranking is based on all-time bests, instead of comparing the
   current level of the athletes.
 * Top performers are ranked on more segments than average athletes
   because they train more and farther. As a result segment rankings
-  overpopulated with top athletes and one's relative rank (expressed
+  are overpopulated with top athletes and one's relative rank (expressed
   as a number from 0 to 1) on a segment is usually worse than one's
   global rank among all Strava athletes.
 * The difficulty of segments varies with the terrain, and there is no
@@ -71,7 +71,7 @@ Loop:
     # Adjust performance of GMA whose score is 0 by definition
     S[j].acc <- linreg(S[j].perf.times, S[j].perf.athlete_scores())(0)
 
-Convergence:
+Convergence criterion:
 When each accumulator changes by less than a certain amount over one
 iteration.
 
